@@ -9,9 +9,10 @@ export class SecondComponent {
   name = 'Lujain Smadi '
   age = 28
   imageUrl = 'https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg';
-  text1 = '';
+  text1 = 'write here';
   change(){
     this.name = "ALI";
     this.age = 22;
   }
+
 }
