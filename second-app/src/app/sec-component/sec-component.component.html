@@ -1,0 +1,13 @@
+<h1>Second comh1onent works!</h1>
+<div>
+    <h2>{{user.name}}</h2>
+    <h3>{{user.age}}</h3>
+    <img [src]="user.imageURL" alt="" height="250px">
+</div>
+<input type="text" [(ngModel)] = "myName" >
+<span>{{myName}}</span>
+
+<div>
+    <button (click)='change ()'>click me to change info</button>
+    <button (click)='change2 ()'>click me to change info</button>
+</div>
