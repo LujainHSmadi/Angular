@@ -9,5 +9,43 @@
 
 <div>
     <button (click)='change ()'>click me to change info</button>
-    <button (click)='change2 ()'>click me to change info</button>
+    <button (click)='display = !display'>display</button>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU40ifYM7jFVe5KIkDz2bOqYM_AaWnrWhqqw&usqp=CAU" *ngIf="display== true" alt="">
 </div>
+<div>
+    <h1 *ngFor="let item of car">{{item}}</h1>
+</div>
+
+<hr>
+
+<div *ngFor="let student of students">
+   <div *ngIf="student.age > 20 && student.age < 25">
+       <h1>{{student.name}}</h1>
+       <p>{{student.age}}</p>
+   </div>
+</div>
+
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'yellow'">this is yellow </p>
+    <p *ngSwitchCase="'red'">this is red</p>
+    <p *ngSwitchCase="'blue'">this is blue</p>
+
+</div>
+
+<div *ngFor="let item of students">
+    <div [ngStyle]=" {'background-color':item.color} ">
+        <h1 [ngStyle]=" {'color':item.bg
+    }" >{{item.name}}</h1>
+        <h2>{{item.age}}</h2>
+    </div>
+</div>
+<div *ngFor="let item of students">
+    <div [ngClass]="{'bg-danger':item.age<20, 'bg-success':item.age>20}">
+        <h1>{{item.name}}</h1>
+        <h2> {{item.age}}</h2>
+    </div>
+</div>
+
+
+
+
