@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    background-color: rgb(38, 183, 232);
+}
+.btn{
+    background-color: rgb(151, 26, 200);
+}
