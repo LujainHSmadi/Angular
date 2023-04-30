@@ -24,4 +24,7 @@ create(){
   }
 
 }
+delete(index:any){
+  this.heros.splice(index,1)
+}
 }
