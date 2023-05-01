@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { FieldsComponent } from './fields/fields.component';
 import { Routes,RouterModule } from '@angular/router';
 import { ListComponent } from './list/list.component';
+import { ItemsComponent } from './items/items.component';
 
 const routes: Routes =[
   //every rout is an object
 {path:'create', component:FieldsComponent},
-{path:'list', component:ListComponent}
+{path:'list', component:ListComponent},
+{path:'products', component:ItemsComponent}
 ]
 
 @NgModule({
